@@ -1,11 +1,16 @@
 # MobileDeviceDevelopmentInCSharp
 Recherche for the mobile device development in C#
 
+## Statisctics of used languages to develop mobile apps on Microsoft platform
+
 ## Tools / technologies with limitations / benefits
 Xamarin
+
 Xamarin.Forms
+
 MAUI
 * Benefits over Xmarin.Forms
+
 Is there any other?
 
 ## Roadmap of hard skills to develop mobile device apps in C#
@@ -14,14 +19,25 @@ Is there any other?
 
 ### Native Development with Platform-specific Tools
 Native development offers the most direct access to platform-specific features and performance but requires specific knowledge for each platform.
+Generally saying each platform has it's own specific of: application infrastructure, data persistence, networking, background processing, testing and debugging, CI/CD.
+
 #### iOS
-* Swift knowledge - is the primary language used for iOS app development
+* Swift or Objective-C knowledge - as they are the primary languages used for iOS app development
 * iOS Software Development Kit (SDK) knowledge
-* Xcode official integrated development environment (IDE) for iOS app development
+* Xcode is official IDE for iOS app development
 * Understanding the principles of UI design for iOS apps
-* Understanding of platform specifics for: application infrastructure, data persistence, networking, background processing, testing and debugging, App Store app deployment
+* App Store app deployment
+* Testing tools: XCTest
+* CI/CD: Bitrise or Jenkins
   
-#### Android - Java or Kotlin with Android Studio
+#### Android
+* Java or Kotlin knowledge - as they are the primary languages used for Android app development
+* Android Software Development Kit (SDK) knowledge
+* Android Studio official IDE
+* Understanding the principles of UI design for Android apps, Android UI layouts using XML files.
+* Google Play Store app deployment
+* Testing tools: JUnit, Espresso or Mockito
+* CI/CD: Jenkins
 
 There is also several possibilities to use C# with other frameworks.
 
