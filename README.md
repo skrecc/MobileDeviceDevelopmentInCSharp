@@ -1,10 +1,25 @@
 # MobileDeviceDevelopmentInCSharp
 Recherche for the mobile device development in C#
 
-## Statisctics of used languages to develop mobile apps on Microsoft platform
+## Tools & technologies to write cross-platform applications in C# 
+limitations / benefits are listed
 
-## Tools / technologies with limitations / benefits
 Xamarin
+* Is abstraction layer that manages communication of shared code with underlying platform code with binding into underlying platform SDKs in both iOS (Xamarin.iOS) and Android (Xamarin.Android)
+* Uses .NET BCL which is know by C# developers
+* Apps are compiled in native code - .apk file on Android, or an .ipa file on iOS
+* Native platform Interop - possiblity of invoking native platform libraries
+* Provides Xamarin.Essentials API to access common resources across all three platforms
+
+Pros:
+* Code reusability
+* Performance - compilation into native code
+* Single language knowledge needed C# for application code
+* Community suppport
+
+Cons:
+* UI has to be written using native libraries
+* Delay in support of platform specific features
 
 Xamarin.Forms
 
