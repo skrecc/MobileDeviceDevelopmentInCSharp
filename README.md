@@ -1,8 +1,7 @@
-# MobileDeviceDevelopmentInCSharp
-Recherche for the mobile device development in C#
+# Multiplatform mobile device development in C#
+This recherche decriebes possibilities of the mult iplatform mobile device development in C#. It investigates the advantages, disadvantages and challenges associated with multiplatform development, considering factors such as code sharing, performance, user experience and support.
 
-## Tools & technologies to write cross-platform applications in C# 
-limitations / benefits are listed
+## Frameworks & tools to write cross-platform applications in C# 
 
 ### Xamarin
 * Open source cross-platform development framework allowing to build native mobile applications for iOS and Android using the C#
@@ -50,8 +49,7 @@ Cons:
 * Platform specific availability delay
 * Shared Xamarin.Forms UI controls may restrict certain design choices or require additional customization
 
-
-### MAUI
+### .NET MAUI
 * Multi-platform App UI is the evolution of Xamarin.Forms, a open source, cross-platform UI framework for building native apps
 * Can build native mobile, desktop and web applications using a shared codebase and UI
 * Can run on multiple platforms including iOS, Android, macOS and Windows
@@ -68,12 +66,23 @@ Pros (over Xamarin.Forms):
 * Improved controls, layouts and styling options
 * Hot Reload introduced - code and UI changes while the app is running. Also available in latter Xamarin.Forms
 
-Benefits over Xmarin.Forms?
+Cons (over Xamarin.Forms):
+* Early development stage - there may have be different level of stability and ecosystem support as its predecessor Xamarin.Forms
+* Compatibility with existing Xamarin.Forms code - there may still be challenges in migrating existing codebases
+* Limitted third party libraries support
+* Limitted tooling and community support
 
-Before decision to use Xamarin/MAUI is allways needed to consider purpose of the app.
-As the biggest benefit is code sharing between platforms then developing platform specific apps decreasing such benefit.
+Before decision to use multi platform mobile device app development is always needed to evaluate following considerations:
+*  Evaluate the complexity (especially UI complexity) of your app, mostly platform specifics will have to implemented separately
+*  If high performance or utilize platform-specific optimizations is needed then native development may be a better choice
+*  Collect platforms you need to target and evaluate their support
+*  Evaluate development timeline and budget for your project. Here single code base can be benefitial.
 
-Is there any other?
+## Tooling
+* Visual Studio/Visual Studio for Mac - most commonly used IDE for C# mobile app development, supports Xamarin and .NET MAUI development
+* Visual Studio Code - lightweight and extensible code editor supporting Xamarin and .NET MAUI projects
+* Xamarin.Forms Previewer - tool integrated into Visual Studio that allows developers to preview the user interface
+* App Center - mobile app development and management platform by Microsoft. Provides build automation, testing, distribution, crash reporting, and analytics.
 
 ## Roadmap of hard skills to develop mobile device apps in C#
 
