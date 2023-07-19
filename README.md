@@ -4,9 +4,10 @@ Recherche for the mobile device development in C#
 ## Tools & technologies to write cross-platform applications in C# 
 limitations / benefits are listed
 
-Xamarin
-* Is abstraction layer that manages communication of shared code with underlying platform code.
-* Shared code is bound into underlying platform SDKs - iOS (Xamarin.iOS) and Android (Xamarin.Android)
+### Xamarin
+* Open source cross-platform development framework allowing to build native mobile applications for iOS and Android using the C#
+* Abstraction layer manages communication of shared code with underlying platform code
+* Shared code is bound into underlying platform SDKs - by iOS (Xamarin.iOS) and Android (Xamarin.Android)
 * Xamarin application can use .NET BCL which is known by C# developers
 * Existing C# code can be recompiled and used in Xamarin application
 * Apps are compiled in native code - .apk file on Android, or an .ipa file on iOS
@@ -17,16 +18,60 @@ Pros:
 * Code reusability
 * Performance - compilation into native code
 * Single language knowledge needed - C# - for application code
+* Open source
 * Community suppport
 
 Cons:
 * UI has to be written using native libraries
 * Delay in support of platform specific features
+* Xamarin app is larger than native app (Mono runtime and BCL assemblies)
 
-Xamarin.Forms
+### Xamarin.Forms
+* Open source UI framework - part of Xamarin platform - for building user interfaces across multiple platforms
+* User interfaces are created in XAML or C#, MVVM supported
+* UI is rendered as native platform controls by target platform renderers
+* Application typically consist of shared .NET (bussiness logic, UI) and platform specifics projects
+* Xamarin.Forms platform-specifics allows utilization of specific feature available only on specific platform
+* Development can be even simplified by usage Xamaring.Forms Shell providing common navigation, search, app structure and layout basis
 
-MAUI
-* Benefits over Xmarin.Forms
+Pros:
+* Single code base application development - C# and XAML
+* Saves development time and effort
+* Native app performance and look - due compilation in native code
+* Prebuild controls and layouts
+* Access to target platform specific features
+* Support to build custom reusable UI components
+
+Cons:
+* Customization limitations - provided pre-build controls may not cover app requrements
+* Performance overhead compared to native apps - shared controls mapping can add additional processing and redering steps
+* Not all platform specifics are available
+* Larger Xamarin.Forms app size than native app
+* Platform specific availability delay
+* Shared Xamarin.Forms UI controls may restrict certain design choices or require additional customization
+
+
+### MAUI
+* Multi-platform App UI is the evolution of Xamarin.Forms, a open source, cross-platform UI framework for building native apps
+* Can build native mobile, desktop and web applications using a shared codebase and UI
+* Can run on multiple platforms including iOS, Android, macOS and Windows
+* Uses a series of platform-specific frameworks for creating apps: .NET Android, .NET iOS, .NET macOS, and Windows UI 3 (WinUI 3) library provided by .NET6 or greater
+* These frameworks have access to the same .NET BCL and this libraries abstracts the details of the underlying platform
+* MAUI provides also a single framework for building the UIs, but platform specifics UI's can be also defined separately using .NET Android, .NET iOS, .NET macOS or WinUI 3
+* As evolution of Xamarin.Forms are also provided cross platform API's for accessing device features, collection of prebuild controls, layouts and databinding support
+* Is compatibile with existing Xamarin.Forms projects, allowing developers to migrate their existing apps
+
+Pros (over Xamarin.Forms):
+* Single project structure with multitargeting - combining the shared code and resources for multiple platforms into a single project file
+* Performance enhancements - new rendering architecture, optimized layouts and improved startup time
+* Extended target platforms support - macOS, Linux planned but not released yet
+* Improved controls, layouts and styling options
+* Hot Reload introduced - code and UI changes while the app is running. Also available in latter Xamarin.Forms
+
+Benefits over Xmarin.Forms?
+
+Before decision to use Xamarin/MAUI is allways needed to consider purpose of the app.
+As the biggest benefit is code sharing between platforms then developing platform specific apps decreasing such benefit.
 
 Is there any other?
 
