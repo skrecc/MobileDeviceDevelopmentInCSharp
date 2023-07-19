@@ -5,16 +5,18 @@ Recherche for the mobile device development in C#
 limitations / benefits are listed
 
 Xamarin
-* Is abstraction layer that manages communication of shared code with underlying platform code with binding into underlying platform SDKs in both iOS (Xamarin.iOS) and Android (Xamarin.Android)
-* Uses .NET BCL which is know by C# developers
+* Is abstraction layer that manages communication of shared code with underlying platform code.
+* Shared code is bound into underlying platform SDKs - iOS (Xamarin.iOS) and Android (Xamarin.Android)
+* Xamarin application can use .NET BCL which is known by C# developers
+* Existing C# code can be recompiled and used in Xamarin application
 * Apps are compiled in native code - .apk file on Android, or an .ipa file on iOS
 * Native platform Interop - possiblity of invoking native platform libraries
-* Provides Xamarin.Essentials API to access common resources across all three platforms
+* Provides Xamarin.Essentials API to access resources across all platforms
 
 Pros:
 * Code reusability
 * Performance - compilation into native code
-* Single language knowledge needed C# for application code
+* Single language knowledge needed - C# - for application code
 * Community suppport
 
 Cons:
