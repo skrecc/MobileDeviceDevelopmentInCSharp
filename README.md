@@ -105,7 +105,7 @@ Cons (over Xamarin.Forms):
   * App packaging, code signing, deployment to target platform store
   * Specifics of target platform app stores
 
-## List skills/knowledge outside .Net platform to develop feature-rich mobile apps
+## List skills/knowledge outside .NET platform to develop feature-rich mobile apps
 
 ### Native Development with Platform-specific Tools
 Native development offers the most direct access to platform-specific features and performance but requires specific knowledge for each platform.
