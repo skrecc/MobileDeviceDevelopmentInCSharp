@@ -1,5 +1,5 @@
-# Multiplatform mobile device development in C#
-This recherche decriebes possibilities of the mult iplatform mobile device development in C#. It investigates the advantages, disadvantages and challenges associated with multiplatform development, considering factors such as code sharing, performance, user experience and support.
+# Multi platform mobile device development in C#
+This recherche decribes possibilities of the multi platform mobile device development in C#. It investigates the advantages, disadvantages and challenges associated with multiplatform development, considering factors such as code sharing, performance, user experience and support.
 
 ## Frameworks & tools to write cross-platform applications in C# 
 
@@ -72,21 +72,40 @@ Cons (over Xamarin.Forms):
 * Limitted third party libraries support
 * Limitted tooling and community support
 
-Before decision to use multi platform mobile device app development is always needed to evaluate following considerations:
-*  Evaluate the complexity (especially UI complexity) of your app, mostly platform specifics will have to implemented separately
-*  If high performance or utilize platform-specific optimizations is needed then native development may be a better choice
-*  Collect platforms you need to target and evaluate their support
-*  Evaluate development timeline and budget for your project. Here single code base can be benefitial.
-
 ## Tooling
 * Visual Studio/Visual Studio for Mac - most commonly used IDE for C# mobile app development, supports Xamarin and .NET MAUI development
 * Visual Studio Code - lightweight and extensible code editor supporting Xamarin and .NET MAUI projects
 * Xamarin.Forms Previewer - tool integrated into Visual Studio that allows developers to preview the user interface
 * App Center - mobile app development and management platform by Microsoft. Provides build automation, testing, distribution, crash reporting, and analytics.
 
-## Roadmap of hard skills to develop mobile device apps in C#
+## Roadmap of hard skills to develop mobile device apps in C# using .NET MAUI
+* Basics
+  * Learn concepts of .NET MAUI, changes in comparison to Xamarin.Forms
+  * Understand the single-project structure and how it differs from Xamarin.Forms
+  * Learn about the new features and improvements introduced in .NET MAUI compared to Xamarin.Forms
 
-## List skills / knowledge outside .Net platform to develope feature-rich mobile apps
+* UI development
+  * Explore controls and view layouts available
+  * Understand navigation and routing
+  * Get familar with resources usage
+
+* Data access
+   * Learn about storage options
+   * Get familar with SQLite database usage
+ 
+* Work with REST API
+   * Consume REST API
+   * Perform CRUD operations
+
+* Advaced topics
+   * Understand how to develop platform specific features
+   * Learn authentication and security concepts
+ 
+* Deployment
+  * App packaging, code signing, deployment to target platform store
+  * Specifics of target platform app stores
+
+## List skills/knowledge outside .Net platform to develop feature-rich mobile apps
 
 ### Native Development with Platform-specific Tools
 Native development offers the most direct access to platform-specific features and performance but requires specific knowledge for each platform.
@@ -126,3 +145,10 @@ https://unity.com/how-to/learning-c-sharp-unity-beginners#what-languages-can-you
 React Native is a framework developed by Facebook for building cross-platform mobile applications using JavaScript.
 React Native can be used with C# through projects like React Native for Xamarin
 https://microsoft.github.io/react-native-windows/docs/native-code-language-choice
+
+## Conclusion
+Before decision to use multi platform mobile device app development is always needed to evaluate following considerations:
+*  Evaluate the complexity (especially UI complexity) of your app, mostly platform specifics will have to implemented separately
+*  If high performance or utilize platform-specific optimizations is needed then native development may be a better choice
+*  Collect platforms you need to target and evaluate their support
+*  Evaluate development timeline and budget for your project. Here single code base can be benefitial.
